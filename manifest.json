@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-notification-router",
-  "version": "1.0.0",
-  "description": "Multi-Platform Notification Router — Route alerts through right channel: PagerDuty, SMS, Slack, Email, Discord",
+  "version": "1.0.1",
+  "description": "Multi-Platform Notification Router \u2014 Route alerts through right channel: PagerDuty, SMS, Slack, Email, Discord",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,15 +9,26 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-notification-router",
   "homepage": "https://cortexprism.io/marketplace/plugins/notification-router",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "notify_route",
       "description": "Route notification to appropriate channel",
       "params": []
     },
-    { "name": "notify_configure_rules", "description": "Configure routing rules", "params": [] },
-    { "name": "notify_test", "description": "Test notification routing", "params": [] },
+    {
+      "name": "notify_configure_rules",
+      "description": "Configure routing rules",
+      "params": []
+    },
+    {
+      "name": "notify_test",
+      "description": "Test notification routing",
+      "params": []
+    },
     {
       "name": "notify_list_channels",
       "description": "List configured notification channels",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
